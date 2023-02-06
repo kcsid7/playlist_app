@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Add New Playlist</h1>
+
+<form id="add-playlist-form" method="POST">
+
+    {% for field in form if field.widget.input_type != 'hidden' %}
+        <div class="form-group">
+            {{ field.label }}
+            {{ field(class="form-control") }}
+        </div>
+    {% endfor %}
+    {{ form.csrf_token }}
+    <button type="submit" class="btn btn-md btn-success">Add</button>
+</form>
+
+{% endblock %}

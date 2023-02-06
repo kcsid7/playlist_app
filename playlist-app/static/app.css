@@ -1,0 +1,34 @@
+body {
+    background-color: rgb(202 209 230 / 50%);
+}
+
+body {
+    background-color: rgb(202 209 230 / 50%);
+
+}
+
+#add-playlist-btn {
+    margin-top: 1.5rem;
+}
+
+.list-group-item {
+    background-color: rgb(202 209 230 / 90%);
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 10rem 0.5rem 3rem;
+    
+}
+
+.del-btn {
+    border-radius: 50%;
+    box-shadow: 0.2rem 0.2rem 0.2rem #684040;
+    background-color: red;
+    font-size: 1rem;
+    padding: 0.3rem 0.8rem
+}
+
+#song-list {
+    margin-top: 2rem;
+}

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Playlists</h1>
+
+<ul class="list-group">
+{% for playlist in playlists %}
+  <li class="list-group-item list-group-item-info">
+     <a href="/playlists/{{ playlist.id }}">{{ playlist.name }}</a>
+  </li>
+{% endfor %}
+</ul>
+
+<div id="add-playlist-btn">
+  <a class="btn btn-primary" href="/playlists/add">Add a playlist</a>
+</div>
+
+{% endblock %}
